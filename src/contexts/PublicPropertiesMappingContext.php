@@ -20,9 +20,10 @@ class PublicPropertiesMappingContext
     }
 
     /**
-     * @param object $target
+     * @template T of object
+     * @param T $target
      * @param bool $hydrateFullStrictly
-     * @return object
+     * @return T
      */
     public function toClassObject(object $target, bool $hydrateFullStrictly = true): object
     {
@@ -82,9 +83,10 @@ class PublicPropertiesMappingContext
     }
 
     /**
+     * @template T of object
      * @param string[] $props
-     * @param object $hydrated
-     * @return object
+     * @param T $hydrated
+     * @return T
      */
     protected function hydrateObjectByProps(array $props, object $hydrated): object
     {
