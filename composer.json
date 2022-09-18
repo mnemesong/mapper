@@ -14,7 +14,8 @@
     "autoload": {
         "psr-4": {
             "Mnemesong\\Mapper\\": "src/",
-            "Mnemesong\\MapperTestUnit\\": "test-unit/"
+            "Mnemesong\\MapperTestUnit\\": "test-unit/",
+            "Mnemesong\\MapperStubs\\": "stubs/"
         }
     },
     "authors": [
