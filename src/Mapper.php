@@ -8,7 +8,7 @@ class Mapper
 {
     /**
      * @param object[] $objects
-     * @return void
+     * @return PublicPropertiesMappingContext
      */
     public static function fromAllPublicPropsObjects(array $objects): PublicPropertiesMappingContext
     {

@@ -6,6 +6,8 @@ use Webmozart\Assert\Assert;
 
 class PublicPropertiesMappingContext
 {
+    /* @var object[] $objects */
+    /* @phpstan-ignore-next-line */
     protected array $objects;
 
     /**
@@ -20,7 +22,7 @@ class PublicPropertiesMappingContext
     /**
      * @param object $target
      * @param bool $hydrateFullStrictly
-     * @return void
+     * @return object
      */
     public function toClassObject(object $target, bool $hydrateFullStrictly = true): object
     {
@@ -48,6 +50,7 @@ class PublicPropertiesMappingContext
      * @param string $propName
      * @return array
      */
+    /* @phpstan-ignore-next-line */
     protected function collectValueVariants(string $propName): array
     {
         $valVariants = [];
@@ -64,6 +67,7 @@ class PublicPropertiesMappingContext
      * @param array $valVariants
      * @return mixed
      */
+    /* @phpstan-ignore-next-line */
     protected function assertValue(array $valVariants)
     {
         $nominal = current($valVariants);
@@ -78,7 +82,7 @@ class PublicPropertiesMappingContext
     }
 
     /**
-     * @param array $props
+     * @param string[] $props
      * @param object $hydrated
      * @return object
      */

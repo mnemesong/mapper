@@ -29,6 +29,7 @@ class PublicPropertiesMappingContextTest extends TestCase
         $obj2 = new class() {
             public string $var1;
             public int $var2;
+            /* @phpstan-ignore-next-line */
             public array $var3;
             public ?string $var4;
         };
