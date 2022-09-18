@@ -2,7 +2,7 @@
 
 namespace Mnemesong\MapperStubs;
 
-class Class1
+class ClassWithV1V2V3V4
 {
     public string $var1;
     public int $var2;
